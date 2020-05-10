@@ -1,0 +1,165 @@
+
+:root {
+    --containerWidth: 50vw;;
+    --containerHeight: 50vh;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Raleway';
+    background-image: url("coronavir.jpg");
+    background-repeat: no-repeat;
+}
+
+.question, .result {
+    border: 0px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+    width: var(--containerWidth);
+    /* height: var(--containerHeight); */
+    min-height: 180px;
+    max-width: 300px;
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    background: rgba(255,255,255,0.7);
+    transform: translate(-50%, -50%);
+}
+
+.result {
+    text-align: justify;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Lobster';
+    margin-bottom: 10px;
+
+}
+
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+  
+  }
+
+.next {
+    position: relative;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    width: 70px;
+    /* animation: keyShake 6s linear infinite; */
+    border: black 2px solid;
+    border-radius: 15%;
+    box-shadow: 5px 5px 10px #0c020293;
+    cursor: pointer;
+}
+
+.next:hover {
+    animation: keyShake2 .2s linear infinite;
+}
+
+@keyframes keyShake {
+    90% {
+        left: 50%;
+    }
+    91% {
+        left: 51%;
+    }
+    92% {
+        left: 49%;
+    }
+    93% {
+        left: 51%;
+    }
+    94% {
+        left: 49%;
+    }
+    95% {
+        left: 51%;
+    }
+    96% {
+        left: 49%;
+    }
+    97% {
+        left: 51%;
+    }
+    98% {
+        left: 49%;
+    }
+    99% {
+        left: 51%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes keyShake2 {
+    0% {
+        left: 50%;
+    }
+    33.33% {
+        left: 51%;
+    }
+    66.66% {
+        left: 49%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+.fas {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translateY(-60%);
+    font-size: 60px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.age, .abroad, .contact, .sick, .result1, .result2, .result3 {
+    display: none;
+}
+
+img {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    width: 70px;
+    transform: translateY(-50%);
+}
+
+.imageFinal {
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+

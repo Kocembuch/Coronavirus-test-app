@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/810db769c4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway&display=swap&subset=cyrillic-ext,latin-ext" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="main.js" async></script>
+
+    <title>Application Coronavirus Test</title>
+</head>
+<body>
+    <div class="question sex">
+        <h2><span>Podaj swoją płeć:</span></h2>
+        <label class="container">
+        <input type="radio" name="ans" id="woman">Kobieta
+        </label>
+        <label class="container">
+        <input type="radio" name="ans" id="man">Mężczyzna
+        </label>
+        <i class="fas fa-venus-mars"></i>
+        <button class="next btnSex">DALEJ</button>
+    </div>
+
+    <div class="question age">
+        <h2><span>Podaj swój wiek:</span></h2>
+        <label class="container">
+            <input type="radio" name="ans" id="low"> 18 - 40 lat
+        </label>
+        <label class="container">
+            <input type="radio" name="ans" id="medium"> 40 - 60 lat
+        </label>
+        <label class="container">
+            <input type="radio" name="ans" id="high"> > 60 lat
+        </label>
+        <img src="age.png">
+        <button class="next btnAge">DALEJ</button>
+    </div>
+
+    <div class="question abroad">
+        <h2><span>Czy byłeś ostatnio za granicą</span></h2>
+        <label class="container">
+            <input type="radio" name="ans" id="trip"> Tak
+        </label>
+        <label class="container">
+            <input type="radio" name="ans" id="home"> Nie
+        </label>
+        <i class="fas fa-globe-americas"></i>
+        <button class="next btnAbroad">DALEJ</button>
+    </div>
+
+    <div class="question contact">
+        <h2><span>Czy miałeś kontakt z osobą zakażoną wirusem</span></h2>
+        <label class="container">
+            <input type="radio" name="ans" id="cont"> Tak
+        </label>
+        <label class="container">
+            <input type="radio" name="ans" id="noCont"> Nie
+        </label>
+        <i class="fas fa-hand-holding-medical"></i>
+        <button class="next btnContact">DALEJ</button>
+    </div>
+
+    <div class="question sick">
+        <h2><span>Czy odczuwasz któreś z tych dolegliwości</span></h2>
+        <label class="container">
+            <input type="checkbox" id="sick1"> Kaszel
+        </label>
+        <label class="container">
+            <input type="checkbox" id="sick2"> Gorączka
+        </label>
+        <label class="container">
+            <input type="checkbox" id="sick3"> Duszności
+        </label>
+        <label class="container">
+            <input type="checkbox" id="sick4"> Biegunka
+        </label>
+        <label class="container">
+            <input type="checkbox" id="noSick"> Nie odczuwam
+        </label>
+        <img src="medical_1.png">
+        <button class="next btnSick">DALEJ</button>
+    </div>
+
+    <div class="result result1">
+        Uzyskałeś <span></span> pkt.
+        Jesteś w grupie małego ryzyka.
+        Prawdopodobnie nie jesteś obecnie zarażony wirusem.
+        Nadal uważaj na siebie i zachowaj izolację społeczną. 
+        <img src="medical_4.png" class="imageFinal">
+    </div>
+    <div class="result result2">
+        Uzyskałeś <span></span> pkt.
+        Jesteś w grupie średniego ryzyka.
+        Zachowaj wzmożoną ostrożność i zachowaj izolację.
+        Jeśli odczuwasz niepokojące dolegliwości, zwróć się do lekarza.
+        <img src="medical_2.png" class="imageFinal">
+    </div>
+
+    <div class="result result3">
+        Uzyskałeś <span></span> pkt.
+        Jesteś w grupie wysokiego ryzyka.
+        Istnieje możliwość, że jesteś już zarażony. Zgłoś się
+        do lekarza po dalsze instrukcje.
+        <img src="medical_3.png" class="imageFinal">
+    </div>
+    
+</body>
+</html>
