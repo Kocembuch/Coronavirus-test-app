@@ -1,6 +1,6 @@
-
 :root {
-    --containerWidth: 50vw;;
+    --containerWidth: 50vw;
+    ;
     --containerHeight: 50vh;
 }
 
@@ -13,14 +13,37 @@
 body {
     font-size: 20px;
     font-family: 'Raleway';
-    background-image: url("coronavir.jpg");
+    background-image: url("virus_L.jpg");
     background-repeat: no-repeat;
 }
 
-.question, .result {
+@media (orientation: landscape) {
+    body {
+        background-image: url("virus_L.jpg");
+        background-size: cover;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1024px) {
+    body {
+        background-image: url("virus_L_port.jpg");
+        /* background-size: cover; */
+    }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+    body {
+        background-image: url("virus_L_port.jpg");
+        /* background-size: cover; */
+    }
+}
+
+
+.question,
+.result {
     border: 0px solid black;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(255,255,255,0.5);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
     width: var(--containerWidth);
     /* height: var(--containerHeight); */
     min-height: 180px;
@@ -29,7 +52,7 @@ body {
     padding: 20px;
     top: 50%;
     left: 50%;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     transform: translate(-50%, -50%);
 }
 
@@ -51,8 +74,8 @@ h2 {
     cursor: pointer;
     font-size: 22px;
     user-select: none;
-  
-  }
+
+}
 
 .next {
     position: relative;
@@ -78,33 +101,43 @@ h2 {
     90% {
         left: 50%;
     }
+
     91% {
         left: 51%;
     }
+
     92% {
         left: 49%;
     }
+
     93% {
         left: 51%;
     }
+
     94% {
         left: 49%;
     }
+
     95% {
         left: 51%;
     }
+
     96% {
         left: 49%;
     }
+
     97% {
         left: 51%;
     }
+
     98% {
         left: 49%;
     }
+
     99% {
         left: 51%;
     }
+
     100% {
         left: 50%;
     }
@@ -114,12 +147,15 @@ h2 {
     0% {
         left: 50%;
     }
+
     33.33% {
         left: 51%;
     }
+
     66.66% {
         left: 49%;
     }
+
     100% {
         left: 50%;
     }
@@ -141,7 +177,13 @@ h2 {
     display: block;
 }
 
-.age, .abroad, .contact, .sick, .result1, .result2, .result3 {
+.age,
+.abroad,
+.contact,
+.sick,
+.result1,
+.result2,
+.result3 {
     display: none;
 }
 
@@ -161,5 +203,3 @@ img {
     transform: translate(-50%, -50%);
     opacity: 0.3;
 }
-
-
